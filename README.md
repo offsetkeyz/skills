@@ -5,7 +5,7 @@ Claude Code plugin marketplace of personal skills.
 ## Install
 
 ```
-/plugin marketplace add <github-user>/skills
+/plugin marketplace add offsetkeyz/skills
 /plugin install find-your-voice@offsetkeyz-skills
 ```
 
