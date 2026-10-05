@@ -1,0 +1,8 @@
+{
+  "name": "process-eval",
+  "description": "Evaluate any process against established, cited frameworks (Theory of Constraints, Lean, VSM, ECRS, checklists, poka-yoke) to find bottlenecks, steps to combine, and checklist candidates. Asks questions first, then reports.",
+  "version": "0.1.0",
+  "author": { "name": "Colin M." },
+  "license": "MIT",
+  "keywords": ["process improvement", "lean", "theory of constraints", "bottleneck", "checklist", "operations"]
+}

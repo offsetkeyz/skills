@@ -7,6 +7,7 @@ Claude Code plugin marketplace of personal skills.
 ```
 /plugin marketplace add offsetkeyz/skills
 /plugin install find-your-voice@offsetkeyz-skills
+/plugin install process-eval@offsetkeyz-skills
 ```
 
 Local testing: `/plugin marketplace add ./` from this folder.
@@ -16,6 +17,7 @@ Local testing: `/plugin marketplace add ./` from this folder.
 | Plugin | Description |
 |---|---|
 | find-your-voice | Discover your writing voice, package it as a "write like me" skill |
+| process-eval | Evaluate any process against cited frameworks (ToC, Lean, ECRS, checklists). Questions first, then a ranked fix list |
 
 ## Adding a skill
 
