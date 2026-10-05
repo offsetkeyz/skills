@@ -11,7 +11,7 @@ Prefer the lowest tier that solves the finding:
 
 ## Use in ranking
 
-Fixes rank by impact ÷ effort. On a tie, the lower tier wins.
+Fixes rank by impact ÷ effort. Impact is hours/week saved by default; lead time cut or risk avoided (money, customer, compliance) may drive the rank instead, and the report must say which. On a tie, the lower tier wins.
 
 ## Hard rules
 

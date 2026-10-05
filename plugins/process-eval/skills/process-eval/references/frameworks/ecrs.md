@@ -4,6 +4,7 @@ name: ECRS
 category: simplify
 triggers:
   - same actor does adjacent steps in the same tool
+  - same data re-entered by one actor in adjacent steps (any tool)
   - a step exists only to prepare for another step
   - steps could happen in parallel or a different order
 blocking_inputs: [step, actor, tool]

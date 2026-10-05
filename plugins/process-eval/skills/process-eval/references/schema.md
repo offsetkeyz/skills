@@ -23,8 +23,8 @@ Every input (narrative, transcript, SOP, step list, timing data) is normalized i
 
 Tag every value:
 
-- `stated`: the user said it or it is in their document. Shown plain.
-- `~estimated`: inferred from context or a stated range. Shown with `~` prefix (`~2 days`).
+- `stated`: the user said it or it is in their document, including their own approximations ("about 3 hours"). Shown plain.
+- `~estimated`: derived by you from context or calculation, not given by the user. Shown with `~` prefix (`~2 days`).
 - `?missing`: not known. Shown as `?`. Becomes a gap question.
 
 ## Rules
@@ -32,6 +32,6 @@ Tag every value:
 1. Never invent a value. Unknown is `?`, not a guess.
 2. Replace names of real people, clients and employers with roles or generic labels.
 3. Keep the user's units; convert only for math, and show the conversion.
-4. `manual_by_choice = Y` only when the user says they enjoy, value, or want to keep the step. Ask if unclear; default is N.
+4. `manual_by_choice = Y` only when the user says they enjoy, value, or want to keep the step. Ask if unclear; default is N. Split a step so Y covers only the part the owner keeps (e.g. bake = N, decorate = Y).
 5. Split a step when it has two actors or two tools. Merge only when the user describes it as one action.
 6. Any step that moves money or contacts customers is flagged `⚑` in the `step` column.

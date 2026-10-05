@@ -14,7 +14,7 @@ Turn any description of a process into a step table, ask the questions that matt
 1. **Normalize.** Read `references/schema.md`. Build the step table from whatever the user gave. Tag every value stated, ~estimated or ?missing. Never invent values. Replace real names with roles.
 2. **Route.** Compare the table to the triggers below. Read only the matched framework files.
 3. **Gap check.** Collect questions from the matched frameworks' "Diagnostic questions" and from `references/question-bank.md` for `?` fields. Tag each one blocking or nice-to-have.
-4. **Stop.** Output using the Pass 1 format in `references/report-template.md`: step table, frameworks in scope, questions. Max 8 questions per round, blocking first.
+4. **Stop.** Output using the Pass 1 format in `references/report-template.md`: step table, frameworks in scope, questions. Max 8 questions per round, blocking first, one question per item. No verdict in Pass 1: do not say the process is good or bad, and give out-of-scope frameworks a trigger-based reason only, not a predicted result.
 
 ### Gate
 
@@ -25,7 +25,7 @@ Turn any description of a process into a step table, ask the questions that matt
 
 ### Pass 2: Analyze and rank
 
-5. **Analyze.** Apply each matched framework's "How to apply" to the table. Each finding names its evidence rows, framework, mechanism (show any math with units), recommendation and source.
+5. **Analyze.** Apply each matched framework's "How to apply" to the table. Each finding names its evidence rows, framework, mechanism (show any math with units), recommendation and source. Evidence lists only stated or ~estimated table values; causes the user did not state go under "Why it matters", marked "likely".
 6. **Rank.** Read `references/fix-ladder.md`. Order fixes by impact ÷ effort; ties go to the lower ladder tier.
 7. **Report.** Use the Pass 2 format in `references/report-template.md`.
 
@@ -40,7 +40,7 @@ Checklists (use checklists.md), ECRS grouping proposals, SOP drafts, current/fut
 | time_wait ≥ 3× time_touch at a step, or a queue before one actor | `references/frameworks/toc.md`, `references/frameworks/littles-law.md`, `references/frameworks/vsm.md` |
 | Backlog counts or end-to-end time questions | `references/frameworks/littles-law.md` |
 | 3+ handoffs between roles | `references/frameworks/vsm.md`, `references/frameworks/lean-wastes.md`, `references/frameworks/sipoc-raci.md` |
-| Re-keying, copy/move-only steps, unused outputs | `references/frameworks/lean-wastes.md` |
+| Re-keying, copy/move-only steps, unused outputs | `references/frameworks/lean-wastes.md`, `references/frameworks/ecrs.md` |
 | Same actor + adjacent steps + same tool | `references/frameworks/ecrs.md` |
 | Work processed weekly/monthly, or waits for a batch | `references/frameworks/batching.md` |
 | rework > 0, repeated checking | `references/frameworks/poka-yoke.md`, `references/frameworks/checklists.md` |

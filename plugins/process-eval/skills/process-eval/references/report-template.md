@@ -23,7 +23,7 @@ Theory of Constraints, Little's Law (wait before S4 is large vs. touch time)
 2. [Checklists] Has a missed S6 ever caused a late payment? → assumed if unanswered: no
 ```
 
-Max 8 questions. Order by what each unlocks (blocking first).
+Max 8 questions, one question mark per item. Order by what each unlocks (blocking first).
 
 ## Pass 2: Findings + fix list
 
@@ -42,6 +42,8 @@ Max 8 questions. Order by what each unlocks (blocking first).
 ### Fix list
 | # | Fix | Finding | Ladder tier | Impact (hrs/wk) | Effort (hrs) | Tool + $/mo | Maint. risk |
 |---|---|---|---|---|---|---|---|
+
+Prefix Impact, Effort and $/mo with ~ unless the user stated them. Say under the table which measure drives the ranking (hours, lead time, or risk avoided).
 
 ### Assumptions
 Unanswered nice-to-have questions, the assumption used, and which findings depend on it.
