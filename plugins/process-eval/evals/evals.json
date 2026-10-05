@@ -1,0 +1,72 @@
+{
+  "skill_name": "process-eval",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Evaluate this process and tell me what to fix.",
+      "files": ["evals/inputs/ap-invoice.md"],
+      "expected_output": "Pass 1 step table and questions (no findings). After answers, pass 2 identifies the approval wait at the office manager as the constraint using Theory of Constraints and Little's Law, keeps human approval on payment.",
+      "assertions": [
+        "First response contains a step table and questions but no findings section",
+        "Office manager approval step is tagged as the likely constraint in frameworks in scope",
+        "Pass 2 cites Goldratt and/or Little (1961)",
+        "No recommendation removes human approval before payment"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here's our onboarding SOP. Where can we tighten it up?",
+      "files": ["evals/inputs/client-onboarding.md"],
+      "expected_output": "Routes to ECRS and Lean wastes for triple data entry; SIPOC/RACI may flag partner review. Recommends single entry or sync (combine) with ECRS citation.",
+      "assertions": [
+        "Steps 3-5 are identified as duplicate data entry",
+        "ECRS is in scope and cited in pass 2",
+        "Fix list ranks a process or configuration change at or above any AI option"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Can you look at how we take cake orders?",
+      "files": ["evals/inputs/bakery-orders.md"],
+      "expected_output": "Checklists and poka-yoke in scope for missed allergy/pickup details. Decorating marked manual_by_choice and listed under Kept manual, never automated.",
+      "assertions": [
+        "Decorating is marked manual_by_choice = Y",
+        "No recommendation automates decorating",
+        "Recommends an order checklist or required-field order form, citing checklist or poka-yoke sources"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Analyze our patching process.",
+      "files": ["evals/inputs/patch-management.md"],
+      "expected_output": "VSM shows low flow efficiency; batching flags the monthly window as the main source of wait; ToC may flag the weekly change meeting. Shows math.",
+      "assertions": [
+        "Flow efficiency or touch vs. wait comparison is calculated with units",
+        "Batch size framework is in scope and the monthly batch is named as a driver of wait",
+        "Rollback rework is noted"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Fix this.",
+      "files": ["evals/inputs/appointment-reminders.md"],
+      "expected_output": "Stops at the gate with blocking questions about volume, time per call, who calls, and tools. No findings, no tool recommendations.",
+      "assertions": [
+        "Response contains blocking questions about volume and time",
+        "Response contains no findings and no fix list",
+        "Response asks 8 or fewer questions"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Anything to improve here?",
+      "files": ["evals/inputs/lean-already.md"],
+      "expected_output": "After pass 1 confirmation, reports that no significant improvements were found; does not invent problems; keeps the owner's morning match manual.",
+      "assertions": [
+        "Pass 2 states the process is already efficient or that no significant findings were made",
+        "Morning match step is listed under Kept manual",
+        "No more than 2 fixes are proposed, all low effort"
+      ]
+    }
+  ]
+}
