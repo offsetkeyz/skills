@@ -14,7 +14,7 @@ Turn any description of a process into a step table, ask the questions that matt
 1. **Normalize.** Read `references/schema.md`. Build the step table from whatever the user gave. Tag every value stated, ~estimated or ?missing. Never invent values. Replace real names with roles.
 2. **Route.** Compare the table to the triggers below. Read only the matched framework files.
 3. **Gap check.** Collect questions from the matched frameworks' "Diagnostic questions" and from `references/question-bank.md` for `?` fields. Tag each one blocking or nice-to-have.
-4. **Stop.** Output using the Pass 1 format in `references/report-template.md`: step table, frameworks in scope, questions. Max 8 questions per round, blocking first, one question per item. No verdict in Pass 1: do not say the process is good or bad, and give out-of-scope frameworks a trigger-based reason only, not a predicted result.
+4. **Stop.** Output using the Pass 1 format in `references/report-template.md`: step table, frameworks in scope, questions. Max 8 questions per round, blocking first, one ask per item (never join two asks with "and"). No verdict in Pass 1: do not say the process is good or bad, and give out-of-scope frameworks a trigger-based reason only, not a predicted result.
 
 ### Gate
 
@@ -25,7 +25,7 @@ Turn any description of a process into a step table, ask the questions that matt
 
 ### Pass 2: Analyze and rank
 
-5. **Analyze.** Apply each matched framework's "How to apply" to the table. Each finding names its evidence rows, framework, mechanism (show any math with units), recommendation and source. Evidence lists only stated or ~estimated table values; causes the user did not state go under "Why it matters", marked "likely".
+5. **Analyze.** Apply each matched framework's "How to apply" to the table. Each finding names its evidence rows, framework, mechanism (show any math with units), recommendation and source. Evidence lists only table values and user statements; any cause, dependency or assumption you add goes under "Why it matters", marked "likely" or "assumed".
 6. **Rank.** Read `references/fix-ladder.md`. Order fixes by impact ÷ effort; ties go to the lower ladder tier.
 7. **Report.** Use the Pass 2 format in `references/report-template.md`.
 
@@ -54,7 +54,7 @@ Each framework's frontmatter `triggers` list adds detail. If nothing matches, sa
 - **Evidence + citation.** Every finding cites at least one step row and one framework source from that framework's Citations section. Never cite anything else.
 - **manual_by_choice.** Never recommend automating (ladder tiers 2–4) a step marked manual_by_choice = Y. A checklist or SOP is allowed. List these under "Kept manual".
 - **Human approval.** Any step that moves money or contacts customers (⚑) keeps human approval in every recommendation.
-- **Confidence.** High = all evidence stated; Medium = any ~estimated; Low = rests on an assumption.
+- **Confidence.** High = all evidence stated; Medium = any ~estimated; Low = depends on anything listed under Assumptions.
 - **No inflation.** If the process is already lean, say so. A short report is a valid report.
 - **Paraphrase sources.** No quotes of 15+ words.
 - **Privacy.** Roles, not names. Flag confidential data (financial, legal, health) if it appears in the input.

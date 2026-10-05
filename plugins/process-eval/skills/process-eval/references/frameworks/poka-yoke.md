@@ -21,8 +21,9 @@ In an office this means the form, template or system catches the mistake while t
 **Do not apply when:** there is no error or rework data and the user cannot name an error that happens; the error is very rare and cheap compared with time savings elsewhere; or the "error" is really a judgment call where people disagree on the right answer (clarify the rule first).
 
 ## Diagnostic questions
-- [blocking] Which errors happen, and at which step are they created? → unlocks: error-proofing target (the source step, not the step where the error is noticed)
-- [nice-to-have] How are errors found today, and how late in the process? → default: found downstream, by a later reviewer or the customer
+- [blocking] Which errors happen most often? → unlocks: error-proofing target
+- [blocking] At which step is each error created (not where it is noticed)? → unlocks: source step for the fix
+- [nice-to-have] How late in the process are errors found today? → default: found downstream, by a later reviewer or the customer
 - [nice-to-have] What does an error cost when it happens (rework time, refunds, late fees, unhappy customers)? → default: low; error-proofing fixes ranked below time savings
 
 ## How to apply

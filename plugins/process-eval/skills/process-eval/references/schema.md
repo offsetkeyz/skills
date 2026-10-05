@@ -34,4 +34,4 @@ Tag every value:
 3. Keep the user's units; convert only for math, and show the conversion.
 4. `manual_by_choice = Y` only when the user says they enjoy, value, or want to keep the step. Ask if unclear; default is N. Split a step so Y covers only the part the owner keeps (e.g. bake = N, decorate = Y).
 5. Split a step when it has two actors or two tools. Merge only when the user describes it as one action.
-6. Any step that moves money or contacts customers is flagged `⚑` in the `step` column.
+6. Any step that moves money, contacts customers, or adds a customer to a list that will be contacted is flagged `⚑` in the `step` column.

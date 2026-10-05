@@ -23,13 +23,13 @@ Theory of Constraints, Little's Law (wait before S4 is large vs. touch time)
 2. [Checklists] Has a missed S6 ever caused a late payment? → assumed if unanswered: no
 ```
 
-Max 8 questions, one question mark per item. Order by what each unlocks (blocking first).
+Max 8 questions, one ask per item (never join two asks with "and"). Manual by choice defaults to N, never ?. Order by what each unlocks (blocking first).
 
 ## Pass 2: Findings + fix list
 
 ```markdown
 ### Summary
-3–5 lines: the main constraint, top 3 fixes, estimated hours/week back.
+3–5 lines: the main constraint, top 3 fixes, estimated hours/week back. Every number here must appear, with its math, in a finding or the fix list.
 
 ### Findings
 #### F1 · Approval queue is the constraint            [High]
@@ -43,7 +43,7 @@ Max 8 questions, one question mark per item. Order by what each unlocks (blockin
 | # | Fix | Finding | Ladder tier | Impact (hrs/wk) | Effort (hrs) | Tool + $/mo | Maint. risk |
 |---|---|---|---|---|---|---|---|
 
-Prefix Impact, Effort and $/mo with ~ unless the user stated them. Say under the table which measure drives the ranking (hours, lead time, or risk avoided).
+Prefix Impact, Effort and $/mo with ~ unless the user stated them (including $0). Explain any ranking that goes against the stated measure. Say under the table which measure drives the ranking (hours, lead time, or risk avoided).
 
 ### Assumptions
 Unanswered nice-to-have questions, the assumption used, and which findings depend on it.
@@ -59,7 +59,7 @@ Full citations for every framework used, copied from the framework files.
 
 - **High:** every value in the evidence is `stated`.
 - **Medium:** at least one `~estimated` value.
-- **Low:** depends on an unanswered nice-to-have assumption.
+- **Low:** depends on anything listed under Assumptions (unanswered nice-to-haves or assumptions you made).
 
 ## Math
 
