@@ -1,7 +1,7 @@
 # process-eval: Design Spec
 
 - **Date:** 2026-10-05
-- **Status:** Draft, pending author review
+- **Status:** Approved 2026-10-05
 - **Location:** `plugins/process-eval/skills/process-eval/` (this marketplace)
 
 ## 1. Purpose
@@ -168,7 +168,7 @@ plugins/process-eval/
 ```
 The marketplace entry is added to `.claude-plugin/marketplace.json`, and the root README plugin table is updated.
 
-**License (proposed):** MIT for structure/instructions, CC-BY-4.0 for framework summaries. To be confirmed by the author before public release.
+**License:** MIT (whole plugin, including framework summaries). Decided 2026-10-05.
 
 ## 8. Testing
 
@@ -193,5 +193,4 @@ Evals are run with skill-creator. Each case lists expected framework triggers pl
 7. Example content uses roles and generic orgs only (no real names)
 
 ## 9. Open items
-- Confirm license choice before flipping marketplace visibility / announcing.
 - v1.1 candidates: `scripts/flow_metrics.py` (optional deterministic math), `profiles/serket.md` lens, FMEA-lite.
